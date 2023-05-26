@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify | Enjoy your Favourite Songs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <section class="shadow-sm py-4 bg-green-500">
+        <header class="max-w-7xl mx-auto lg:px-0 px-2">
+            <nav class="flex items-center justify-between">
+                <div>
+                    <a href="./index.html">
+                    <img src="./Images/logo.png" alt="" class="w-24">
+                </a>
+                </div>
+                <div>
+                    <ul class="flex items-center gap-4">
+                        <li class="text-lg font-medium text-white hover:text-green-900"><a href="#">Home</a></li>
+                        <li class="text-lg font-medium text-white hover:text-green-900"><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="relative max-w-7xl mx-auto my-5">
+        <img src="./Images/hero-image2.jpg" alt="" class="w-full object-cover h-[565px] rounded-lg">
+        <div class="absolute top-5 left-5">
+            <h1 class="text-2xl text-white font-bold capitalize">No Copyright sounds</h1>
+            <!-- songs list -->
+            <div class="flex flex-col items-start gap-4 my-4">
+                <!-- song 1 -->
+                <div class="Song-items flex items-center justify-between gap-4 text-white">
+                    <div class="flex items-center gap-4">
+                        <img src="./Images/let-me-love-you.jpg" alt="" class="w-14 rounded-lg">
+                        <h1 class="song-name text-md text-white capitalize">Let me love you</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="song-duration">03:26</span>
+                        <i id="0" class="song-play-pause-icon fa fa-play-circle-o cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="Song-items flex items-center justify-between gap-4 text-white">
+                    <div class="flex items-center gap-4">
+                        <img src="./Images/let-me-love-you.jpg" alt="" class="w-14 rounded-lg">
+                        <h1 class="song-name text-md text-white capitalize">Let me love you</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="song-duration">03:26</span>
+                        <i id="1" class="song-play-pause-icon fa fa-play-circle-o cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="Song-items flex items-center justify-between gap-4 text-white">
+                    <div class="flex items-center gap-4">
+                        <img src="./Images/let-me-love-you.jpg" alt="" class="w-14 rounded-lg">
+                        <h1 class="song-name text-md text-white capitalize">Let me love you</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="song-duration">03:26</span>
+                        <i id="2" class="song-play-pause-icon fa fa-play-circle-o cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="Song-items flex items-center justify-between gap-4 text-white">
+                    <div class="flex items-center gap-4">
+                        <img src="./Images/let-me-love-you.jpg" alt="" class="w-14 rounded-lg">
+                        <h1 class="song-name text-md text-white capitalize">Let me love you</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="song-duration">03:26</span>
+                        <i id="3" class="song-play-pause-icon fa fa-play-circle-o cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="Song-items flex items-center justify-between gap-4 text-white">
+                    <div class="flex items-center gap-4">
+                        <img src="./Images/let-me-love-you.jpg" alt="" class="w-14 rounded-lg">
+                        <h1 class="song-name text-md text-white capitalize">Let me love you</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="song-duration">03:26</span>
+                        <i id="4" class="song-play-pause-icon fa fa-play-circle-o cursor-pointer"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-green-500 py-4">
+        <div class="max-w-7xl mx-auto">
+            <input type="range" name="range" id="progressBar" value="0" class="w-full cursor-pointer">
+            <div class="mt-2 flex items-center justify-center gap-4 text-2xl text-white">
+                <i class="pre fa fa-step-backward cursor-pointer"></i>
+                <i class="fa fa-play-circle-o master-play cursor-pointer"></i>
+                <i class="next fa fa-step-forward cursor-pointer"></i>
+            </div>
+            <div class="absolute bottom-[4vh]">
+            <div class="flex items-center justify-center gap-2 mt-2">
+                <img src="./Images/play2.gif" alt="" class="hide-show-gif w-6 opacity-0 ease-in duration-300">
+                <p class="master-name text-white text-sm capitalize">let me love you</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
